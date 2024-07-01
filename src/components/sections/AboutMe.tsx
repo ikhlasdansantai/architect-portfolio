@@ -8,7 +8,7 @@ export default function AboutMe() {
         <img src={Profile} alt="profile" className="img" />
       </Grid>
       <Grid item md={5} display="flex" flexDirection="column" gap={2}>
-        <Typography variant="h2" component="h2" fontWeight="semibold" color="white" sx={{ width: "15ch" }}>
+        <Typography variant="h2" component="h2" fontWeight="bold" color="white" sx={{ width: "15ch" }}>
           A Few Words About Me
         </Typography>
         <Typography variant="caption" color="rgba(255,255,255,0.75)">
@@ -79,10 +79,10 @@ export default function AboutMe() {
             <Typography variant="subtitle2" color="rgba(255,255,255,0.75)">
               Organization Experience
             </Typography>
-            <Typography variant="caption" color="whitesmoke">
+            <Typography variant="subtitle2" color="whitesmoke">
               Itenas Architecture Week (March 2024)
             </Typography>
-            <Typography variant="caption" color="whitesmoke">
+            <Typography variant="subtitle2" color="whitesmoke">
               Sarthapura (March 2022)
             </Typography>
           </Box>
