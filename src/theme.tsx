@@ -25,7 +25,7 @@ const theme = createTheme({
     values: {
       xs: 0,
       smallPhone: 350,
-      sm: 600,
+      sm: 560,
       md: 860,
       lg: 1200,
       xl: 1536,
