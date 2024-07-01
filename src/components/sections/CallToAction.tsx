@@ -3,7 +3,7 @@ import { Instagram, Facebook } from "@mui/icons-material";
 
 export default function CallToAction() {
   return (
-    <Box maxWidth="lg" mx={"auto"} mt={20} mb={10} display="flex" flexDirection="column" alignItems="center" gap={6}>
+    <Box maxWidth="lg" mx={"auto"} mt={20} mb={10} display="flex" flexDirection="column" alignItems="center" gap={6} sx={{ paddingInline: { xs: 2, lg: 0 } }}>
       <Box display="flex" flexDirection="column" gap={2}>
         <Typography variant="h3" color="white" textAlign="center">
           Do you have any project in mind?

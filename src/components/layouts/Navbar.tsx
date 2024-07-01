@@ -5,26 +5,32 @@ export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
   const [scrollClass, setScrollClass] = useState({
     borderClass: window.innerWidth < 640 ? "" : "3px solid #ff0000",
-    bgClass: window.innerWidth < 640 ? "white" : "",
+    bgClass: window.innerWidth < 640 ? "" : "",
     textClass: window.innerWidth < 640 ? "#141414" : "",
   });
 
   const handleScroll = () => {
     const isScrolled = window.scrollY > 0;
 
-    if (window.innerWidth < 640) {
-      setScrollClass({
-        borderClass: "",
-        bgClass: "white",
-        textClass: "black",
-      });
-    } else {
-      setScrollClass({
-        borderClass: isScrolled ? "" : "3px solid #ff0000",
-        bgClass: isScrolled ? "white" : "",
-        textClass: isScrolled ? "#141414" : "white",
-      });
-    }
+    setScrollClass({
+      borderClass: isScrolled ? "" : "3px solid #ff0000",
+      bgClass: isScrolled ? "white" : "",
+      textClass: isScrolled ? "#141414" : "white",
+    });
+
+    // if (window.innerWidth < 640) {
+    //   setScrollClass({
+    //     borderClass: "",
+    //     bgClass: "",
+    //     textClass: "black",
+    //   });
+    // } else {
+    //   setScrollClass({
+    //     borderClass: isScrolled ? "" : "3px solid #ff0000",
+    //     bgClass: isScrolled ? "white" : "",
+    //     textClass: isScrolled ? "#141414" : "white",
+    //   });
+    // }
   };
 
   useEffect(() => {
