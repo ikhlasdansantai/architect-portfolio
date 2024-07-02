@@ -89,7 +89,11 @@ export default function AboutMe() {
             </Box>
           </Box>
         </Box>
-        <Button variant="contained" sx={{ color: "white", borderColor: "white", padding: "1rem 1.6rem", fontSize: ".75rem", fontWeight: "semibold", letterSpacing: 1, mt: 2, display: "block", mr: "auto" }}>
+        <Button
+          variant="contained"
+          sx={{ color: "white", borderColor: "white", padding: "1rem 1.6rem", fontSize: ".75rem", fontWeight: "semibold", letterSpacing: 1, mt: 2, display: "block", mr: "auto" }}
+          onClick={() => window.open("https://drive.google.com/file/d/1gYSwy4rJ9PtNR8hoFCH9SEX357f7nNec/view")}
+        >
           See More
         </Button>
       </Grid>
