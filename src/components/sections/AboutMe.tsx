@@ -8,7 +8,7 @@ export default function AboutMe() {
         <img src={Profile} alt="profile" className="img" />
       </Grid>
       <Grid item md={5} display="flex" flexDirection="column" gap={2}>
-        <Typography variant="h2" component="h2" fontWeight="bold" color="white" sx={{ width: "15ch" }}>
+        <Typography variant="h2" component="h2" fontWeight="bold" color="white" sx={{ width: { lg: "15ch" } }}>
           A Few Words About Me
         </Typography>
         <Typography variant="caption" color="rgba(255,255,255,0.75)">
@@ -16,7 +16,7 @@ export default function AboutMe() {
         </Typography>
 
         <Box display={"flex"} flexDirection="column" gap={3}>
-          <Box>
+          <Box display={"flex"} flexDirection="column" gap={0.5}>
             <Typography variant="caption" color="rgba(255,255,255,0.75)">
               Education
             </Typography>
@@ -24,7 +24,7 @@ export default function AboutMe() {
               Institut Teknologi Nasional, Bandung
             </Typography>
           </Box>
-          <Box>
+          <Box display={"flex"} flexDirection="column" gap={0.5}>
             <Typography variant="caption" color="rgba(255,255,255,0.75)">
               Degree
             </Typography>
@@ -32,7 +32,7 @@ export default function AboutMe() {
               BSc. in Architecture
             </Typography>
           </Box>
-          <Box>
+          <Box display={"flex"} flexDirection="column" gap={0.5}>
             <Typography variant="caption" color="rgba(255,255,255,0.75)">
               Language
             </Typography>
@@ -75,20 +75,22 @@ export default function AboutMe() {
               </Box>
             </Box>
           </Box>
-          <Box display="flex" flexDirection="column">
+          <Box display="flex" flexDirection="column" gap={0.5}>
             <Typography variant="subtitle2" color="rgba(255,255,255,0.75)">
               Organization Experience
             </Typography>
-            <Typography variant="subtitle2" color="whitesmoke">
-              Itenas Architecture Week (March 2024)
-            </Typography>
-            <Typography variant="subtitle2" color="whitesmoke">
-              Sarthapura (March 2022)
-            </Typography>
+            <Box>
+              <Typography variant="subtitle2" color="whitesmoke">
+                Itenas Architecture Week (March 2024)
+              </Typography>
+              <Typography variant="subtitle2" color="whitesmoke">
+                Sarthapura (March 2022)
+              </Typography>
+            </Box>
           </Box>
         </Box>
-        <Button variant="contained" sx={{ color: "white", borderColor: "white", padding: "1rem 1.6rem", fontSize: ".75rem", fontWeight: "semibold", letterSpacing: 1, mt: 3, display: "block", mr: "auto" }}>
-          Download CV
+        <Button variant="contained" sx={{ color: "white", borderColor: "white", padding: "1rem 1.6rem", fontSize: ".75rem", fontWeight: "semibold", letterSpacing: 1, mt: 2, display: "block", mr: "auto" }}>
+          See More
         </Button>
       </Grid>
     </Grid>

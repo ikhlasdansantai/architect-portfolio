@@ -16,7 +16,7 @@ function App() {
         <AboutMe />
 
         <Categories />
-        <Grid container className="galeries" justifyContent={"space-between"} mx={"auto"} mt={10} rowGap={6} sx={{ maxWidth: "lg", paddingInline: { xs: 2, lg: 0 } }}>
+        <Grid container className="galeries" justifyContent={"space-between"} mx={"auto"} mt={6} rowGap={6} sx={{ maxWidth: "lg", paddingInline: { xs: 2, lg: 0 } }}>
           {projects.map((project, index) => (
             <Grid item xs={12} md={3.5} key={index}>
               <BoxGallery {...project} />

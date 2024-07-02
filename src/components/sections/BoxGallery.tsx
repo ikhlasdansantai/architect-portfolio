@@ -10,9 +10,9 @@ export default function BoxGallery({ title, img }: { title: string; img: string 
         <Typography variant="h6" color="white">
           {title}
         </Typography>
-        <Typography variant="caption" color="white">
+        {/* <Typography variant="caption" color="white">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptate officia quibusdam eos...
-        </Typography>
+        </Typography> */}
       </Box>
     </Box>
   );
