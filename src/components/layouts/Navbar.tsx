@@ -17,20 +17,6 @@ export default function Navbar() {
       bgClass: isScrolled ? "white" : "",
       textClass: isScrolled ? "#141414" : "white",
     });
-
-    // if (window.innerWidth < 640) {
-    //   setScrollClass({
-    //     borderClass: "",
-    //     bgClass: "",
-    //     textClass: "black",
-    //   });
-    // } else {
-    //   setScrollClass({
-    //     borderClass: isScrolled ? "" : "3px solid #ff0000",
-    //     bgClass: isScrolled ? "white" : "",
-    //     textClass: isScrolled ? "#141414" : "white",
-    //   });
-    // }
   };
 
   useEffect(() => {
